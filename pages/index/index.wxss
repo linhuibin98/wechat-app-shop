@@ -1,0 +1,82 @@
+swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+
+swiper image {
+  width: 100%;
+}
+
+
+/* 导航开始 */
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx 0;
+  background-color: #fff;
+}
+
+.nav-item {
+  width: 128rpx;
+  height: 140rpx;
+  /* flex: 1; */
+}
+
+.nav-item image {
+  width: 100%;
+}
+/* 导航结束 */
+
+/* 楼层开始 */
+.floor-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+}
+
+.floor-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.floor-title {
+  /* width: 100%; */
+  padding-top: 20rpx;
+}
+
+.floor-title image {
+  width: 100%;
+}
+
+.floor-nav {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  overflow: hidden;
+  box-sizing: border-box;
+  /* padding: 20rpx; */
+  
+}
+
+.floor-nav navigator {
+  /* flex: 1; */
+  float: left;
+  width: calc((100vw - 40rpx - 20rpx) / 3);
+}
+
+.floor-nav navigator:nth-last-of-type(-n+4) {
+  margin-left: 10rpx;
+  height: calc(((100vw - 40rpx - 20rpx) / 3) * 386 / 232 / 2 - 5rpx);
+}
+
+.floor-nav navigator:nth-of-type(2), .floor-nav navigator:nth-of-type(3) {
+  margin-bottom: 10rpx;
+}
+
+.floor-nav navigator image {
+  width: 100%;
+  height: 100%;
+}
+
+/* 楼层结束 */

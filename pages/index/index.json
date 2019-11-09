@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "SeachInput": "../components/searchInput/searchInput"
+  },
+  "navigationBarBackgroundColor": "#C82C37",
+  "navigationBarTitleText": "商城首页",
+  "navigationBarTextStyle": "white"
+}

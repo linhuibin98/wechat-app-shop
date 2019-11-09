@@ -1,0 +1,32 @@
+
+.content-list {
+  display: flex;
+  padding: 30rpx 0 30rpx 30rpx;
+  border-top: 1px solid #ccc;
+  /* vertical-align: top; */
+}
+
+.list-left {
+  flex: 2;
+  margin-right: 30rpx;
+}
+
+.list-left image {
+  width: 100%;
+}
+
+.list-right {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-right .title {
+  flex: 5;
+}
+
+.list-right .price {
+  flex: 2;
+  color: var(--theme-color);
+}
+

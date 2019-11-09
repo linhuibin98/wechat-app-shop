@@ -1,0 +1,6 @@
+<view class="head-ipt">
+  <navigator wx:if='{{!isSearch}}' url='/pages/search/search'>
+    <input class="ipt" type="text" placeholder="搜索" disabled="{{!isSearch}}" />
+  </navigator>
+  <input wx:else class="ipt search" type="text" placeholder="搜索" disabled="{{!isSearch}}" bindinput="handleInput" />
+</view>

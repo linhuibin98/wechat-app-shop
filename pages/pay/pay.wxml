@@ -1,0 +1,46 @@
+<!-- 收货地址 -->
+<view class="address">
+  <!-- 当前收货地址是否存在，不存在显示添加按钮 -->
+  <button wx:if="{{!addressStr}}" class="btn" bind:tap='handleGetAddresss'>添加收货地址</button>
+  <!-- 存在则显示地址信息 -->
+  <view wx:else class="address-info">
+    <view class="name-phone">
+      <text class="name">收货人: {{oAddress.userName}}</text>
+      <text class="phone">{{oAddress.telNumber}}</text>
+    </view>
+    <view class="detaill">{{addressStr}}</view>
+  </view>
+</view>
+
+<!-- 购物车 商品列表 -->
+<view class="cart-main">
+  <view class="cart-text">购物车</view>
+  <view class="cart-list">
+    <view wx:for="{{cart}}" class="cart-item" wx:key="goods_id">
+      <!-- 中: 商品图片 -->
+      <navigator class="goods-img" url="/pages/goods_detail/good_detail?goods_id={{item.goods_id}}">
+        <image mode="widthFix" src="{{item.pic}}" />
+      </navigator>
+      <!-- 右 -->
+      <view class="goods-detail">
+        <!-- 商品标题 -->
+        <view class="goods-title">{{item.goods_name}}</view>
+        <!-- 价格 和数量选择工具 -->
+        <view class="goods-all">
+          <!-- 价格-->
+          <view class="goods-price">￥ {{item.goods_price}}</view>
+          <view class="goods-num">x {{item.num}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 底部支付栏 -->
+<view class="bottom-compute">
+  <view class="all">
+    <view class="all-price">合计: <text>￥{{totalPrice}}</text></view>
+    <view class="tip">包含运费</view>
+  </view>
+  <view class="pay" bind:tap='handlePay'>支付({{totalNum}})</view>
+</view>

@@ -1,0 +1,19 @@
+<view class="list-container">
+  <SearchInput></SearchInput>
+  <Tabs tabList='{{tabList}}' bind:changeTab="changeTab">
+    <navigator 
+    wx:for='{{goodsList}}' 
+    wx:key='goods_id' 
+    class="content-list"
+    url="/pages/goods_detail/good_detail?goods_id={{item.goods_id}}">
+      <view class="list-left">
+        <!-- 没有图片时, 用固定的图片占位 -->
+        <image mode="widthFix" src="{{item.goods_small_logo || 'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}"></image>
+      </view>
+      <view class="list-right">
+        <text class="title">{{item.goods_name}}</text>
+        <text class="price">￥ {{item.goods_price}}</text>
+      </view>
+    </navigator>
+  </Tabs>
+</view>

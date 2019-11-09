@@ -1,0 +1,16 @@
+<Tabs tabList='{{tabList}}' bind:changeTab='handleChangeTab'>
+  <view class="order-item">
+    <view class="order-num">
+      <text class="text">订单编号</text>
+      <text class="num">HMDD2019081215700121</text>
+    </view>
+    <view class="order-price">
+      <text class="text">订单价格</text>
+      <text class="num">￥13618</text>
+    </view>
+    <view class="order-date">
+      <text class="text">订单日期</text>
+      <text class="num">2019/8/9 下午7:07:59</text>
+    </view>
+  </view>
+</Tabs>

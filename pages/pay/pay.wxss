@@ -1,0 +1,142 @@
+/* 顶部地址 */
+.address {
+  padding: 20rpx 0;
+}
+
+.address .btn {
+  width: 400rpx;
+  height: 100rpx;
+  border: 1px solid #80C280;
+  color: #80C280;
+}
+
+.address-info {
+  padding: 0 20rpx;
+}
+
+.address-info .name-phone {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address-info .detaill {
+  margin-top: 16rpx;
+}
+
+/* 购物车 商品列表 */
+
+.cart-main {
+  margin-bottom: 90rpx;
+}
+
+.cart-text {
+  padding: 20rpx;
+  border-top: 1px solid var(--theme-color);
+  border-bottom: 1px solid var(--theme-color);
+}
+
+.cart-list {
+
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx;
+}
+
+.check-group {
+  flex: 1;
+}
+
+.goods-img {
+  flex: 2;
+}
+
+.goods-img image {
+  width: 150rpx;
+}
+
+.goods-detail {
+  flex: 4;
+}
+
+.goods-title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.goods-all {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30rpx;
+}
+
+.goods-all .goods-price {
+  flex: 5;
+  color: var(--theme-color);
+}
+
+.goods-all .goods-num {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.num-ipt {
+  flex: 5;
+  text-align: center;
+}
+
+.goods-num .num-btn {
+  flex: 1;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 底部结算 */
+
+.bottom-compute {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 90rpx;
+  background-color: #fff;
+}
+
+.all {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.all-price text {
+  color: var(--theme-color);
+  font-weight: bold;
+}
+
+
+.pay {
+  flex: 2;
+  width: 100%;
+  height: 100%;
+  background-color: var(--theme-color);
+  color: #fff;
+  height: 100%;
+  text-align: center;
+  line-height: 90rpx;
+}

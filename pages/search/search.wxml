@@ -1,0 +1,2 @@
+<SearchInput isSearch='{{true}}' bind:getSearchResult='getSearchResult'></SearchInput>
+<navigator wx:for='{{goodsList}}' class="list-item" wx:key="goods_id" url="/pages/goods_detail/good_detail?goods_id={{item.goods_id}}">{{item.goods_name}}</navigator>

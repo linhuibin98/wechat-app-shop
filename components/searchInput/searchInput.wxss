@@ -1,0 +1,18 @@
+.head-ipt {
+  overflow: hidden;
+  background-color: #C82C37;
+}
+
+.ipt {
+  background-color: #fff;
+  margin: 16rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  font-size: 26rpx;
+  height: 50rpx;
+}
+
+.ipt.search {
+  text-align: start;
+  padding:  0 20rpx;
+}

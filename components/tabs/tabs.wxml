@@ -1,0 +1,9 @@
+<!--components/tabs/tabs.wxml-->
+<view class="tabs-content">
+    <view class="content-cate">
+      <view wx:for='{{tabList}}' class="cate {{currentCateIndex === index ? 'active' : ''}}" bind:tap='handleCate' data-index="{{index}}" wx:key='index'>
+        {{item}}
+      </view>
+    </view>
+    <slot></slot>
+  </view>

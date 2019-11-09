@@ -1,0 +1,23 @@
+page {
+  background-color: #fff;
+}
+.order-item {
+  border-bottom: 1px solid #ccc;
+  padding: 20rpx 20rpx 0 20rpx;
+}
+
+.order-num, .order-price, .order-date {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.order-num {
+  padding-top: 0;
+}
+
+.order-price .num {
+  color: var(--theme-color);
+}

@@ -1,0 +1,134 @@
+page {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.avator {
+  overflow: hidden;
+  position: relative;
+  width: 750rpx;
+  height: 45vh;
+}
+
+.avator.bg {
+  background-color: var(--theme-color);
+}
+
+.avator button {
+  width: 300rpx;
+  height: 100rpx;
+  border: 1px solid springgreen;
+  color: springgreen;
+  margin-top: 50%;
+  transform: translateY(-200%);
+}
+
+.avator .bg image {
+  width: 100%;
+  height: 45vh;
+  -webkit-filter: blur(5px);
+  /* Chrome, Safari, Opera */
+  filter: blur(5px);
+}
+
+.ava-img {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.ava-img image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.ava-img .name {
+  text-align: center;
+  margin-top: 30rpx;
+  color: aliceblue;
+}
+
+/* 收藏 */
+.col-container {
+  position: relative;
+}
+
+.user-col {
+  position: absolute;
+  top: -50rpx;
+  display: flex;
+  width: 710rpx;
+  margin-left: 20rpx;
+  padding: 10rpx 0;
+  justify-content: space-around;
+  background-color: #fff;
+}
+
+.col-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col-item .num {
+  color: var(--theme-color);
+}
+
+.col-item .text {
+  font-size: 26rpx;
+}
+
+/* 订单 */
+.orders {
+  background-color: #fff;
+  margin: 80rpx 20rpx 20rpx 20rpx;
+}
+
+.orders .title {
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx 0 10rpx 20rpx;
+}
+
+.orders .order-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 10rpx 0;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.order-icon i {
+  color: var(--theme-color);
+  font-size: 40rpx;
+}
+
+.address, .share {
+  margin: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+}
+
+.help-list {
+  margin: 0 20rpx 10rpx 20rpx;
+  background-color: #fff;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+
+.list-item:nth-last-child(-n+2) {
+  border-top: 1px solid #ccc;
+}
